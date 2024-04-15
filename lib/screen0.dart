@@ -8,7 +8,7 @@ class Screen0 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.purple,
-        title: const Text("Screen "),
+        title: const Text("Screen 0"),
       ),
       body: Center(
         child: Column(
