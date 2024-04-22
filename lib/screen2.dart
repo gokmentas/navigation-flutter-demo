@@ -8,13 +8,24 @@ class Screen2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: const Text("Screen 2"),
+        title: const Text(
+          "Screen 2",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
-          child: const Text("Go Back To Screen 1"),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            shape: const RoundedRectangleBorder(),
+          ),
+          child: const Text(
+            "Go Back",
+            style: TextStyle(color: Colors.black),
+          ),
         ),
       ),
     );
